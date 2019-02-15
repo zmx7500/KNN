@@ -206,9 +206,13 @@ namespace KNN
                     Font = new Font("Microsoft Sans Serif", 10, FontStyle.Regular)
 
                 };
+
+
                 
                 panel2.Controls.Add(line);
                 i++;
+
+
             }
 
         }
