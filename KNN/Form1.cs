@@ -202,6 +202,8 @@ namespace KNN
                 {
                     Text = s[0]+"     "+s[1]+"\n"+s[2]+"\n"+s[3],
                     Location = new Point(10, i * 90),
+
+
                     AutoSize = true,
                     Font = new Font("Microsoft Sans Serif", 10, FontStyle.Regular)
 
