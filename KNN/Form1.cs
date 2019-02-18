@@ -219,7 +219,12 @@ namespace KNN
 
         }
 
-      
-
+        private void btn_movies_Click(object sender, EventArgs e)
+        {
+            MoviesForm movies = new MoviesForm();
+            movies.Tag = this;
+            movies.Show();
+            this.Hide();
+        }
     }
 }
