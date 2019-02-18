@@ -19,7 +19,7 @@ namespace KNN
             Text = "Geriausi filmai";
 
             // Read json file. Path: KNN/bin/Debug
-            ratings = JsonConvert.DeserializeObject<List<Rating>>(File.ReadAllText("movies.json"));
+            ratings = JsonConvert.DeserializeObject<List<Rating>>(File.ReadAllText(@"..\..\movies.json"));
         }
 
         private List<Rating> FindKNearestNeighbours(Rating newRating, List<Rating> ratings, int k)
@@ -193,7 +193,7 @@ namespace KNN
 
         private void komentarai()
         {
-            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\aurim\OneDrive\Stalinis kompiuteris\KNN\KNN\bin\Debug\komentarai.txt");
+            string[] lines = System.IO.File.ReadAllLines(@"..\..\komentarai.txt");
             int i = 0;
             foreach (var l in lines)
             {
