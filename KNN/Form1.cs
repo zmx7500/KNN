@@ -11,6 +11,7 @@ namespace KNN
     public partial class Form1 : Form
     {
         List<Rating> ratings;
+        public string gg { get; set; } = "labas";
         public Form1()
         {
             InitializeComponent();
@@ -81,9 +82,11 @@ namespace KNN
         {
             if (!IsInputValid())
             {
-                MessageBox.Show("Patikrinkite ar užpildėte visus laukus");
+                MessageBox.Show("Patikrinkite ar užpildėte visus laukus.", "KLAIDA");
                 return;
             }
+
+            MessageBox.Show(gg, "KLAIDA");
 
             var rating = GenerateNewRating();
 
@@ -182,9 +185,9 @@ namespace KNN
         {
 
             MessageBox.Show("Programoje pateikti visi žvaigždžių karų filmai, kiekvieną filmą reikia įvertinti vertinimo sistema: \n\n "+
-                "'Nemačiau' - Jei filmo nemačiau  \n1 -   \n2 - Nepatiko \n3 - Iš dalies patiko \n4 - Patiko \n5 - Labai patiko "
+                "'Nemačiau' - Jei filmo nemačiau  \n1 - Labai nepatiko  \n2 - Nepatiko \n3 - Iš dalies patiko \n4 - Patiko \n5 - Labai patiko "
                 +"\n\nAtliktus filmų vertinimą, paspaudus mygtuką 'gauti rekomendacijas' programos algoritmas apskaičiuos nematytų filmų vertinimą, taip galimą bus nustatyti ar filmas patiks ar ne." 
-            +"\n\nFilmus vertinkite pagal atsižvelgdami į šiuos kriterijus : \n1. Filmo scenarijų\n2. Filmo pasakojimą\n3. Filmo nagrinėjamus klausimus\n4. Filmo temas\n5. Filmo įprasminamas vertybes",
+            +"\n\nFilmus vertinkite pagal atsižvelgdami į šiuos kriterijus : \n* Filmo scenarijų\n* Filmo pasakojimą\n* Filmo nagrinėjamus klausimus\n* Filmo temas\n* Filmo įprasminamas vertybes",
         
     "INSTRUKCIJA");
             return;

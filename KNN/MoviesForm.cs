@@ -48,6 +48,7 @@ namespace KNN
         private void button1_Click(object sender, EventArgs e)
         {
             var form1 = (Form1)Tag;
+            form1.gg = "kebabas";
             form1.Show();
             Close();
         }
